@@ -5,20 +5,16 @@ const ParticlesContainer = () => {
   const [init, setInit] = useState(false);
   useEffect(() => {
     initParticlesEngine(async (engine) => {
-      // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-      // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-      // starting from v2 you can add only the features you need reducing the bundle size
-      //await loadAll(engine);
       await loadFull(engine);
-
-      //await loadBasic(engine);
     }).then(() => {
       setInit(true);
     });
   }, []);
+
   const particlesLoaded = useCallback(async (container) => {
     console.log(container);
   }, []);
+
   const options = useMemo(
     () => ({
       fullScreen: { enable: false },
@@ -45,17 +41,17 @@ const ParticlesContainer = () => {
             quantity: 90,
           },
           repulse: {
-            distance: 200,
-            duration: 0.4,
+            distance: 150,
+            duration: 0.2,
           },
         },
       },
       particles: {
         color: {
-          value: "#e68e2e",
+          value: "rgba(0, 0, 0, 1)",
         },
         links: {
-          color: "#f5d393",
+          color: "rgba(0, 0, 0, 0.5)",
           distance: 150,
           enable: true,
           opacity: 0.5,
@@ -93,12 +89,12 @@ const ParticlesContainer = () => {
       },
       detectRetina: true,
     }),
-    []
+    [],
   );
 
   return (
     <Particles
-      className="w-full h-full absolute top-0 left-0"
+      className="fixed left-0 top-0 -z-[1] h-full w-full"
       id="tsparticles"
       init={init}
       particlesLoaded={particlesLoaded}
