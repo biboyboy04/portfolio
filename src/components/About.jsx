@@ -10,6 +10,7 @@ const Home = () => {
     "ENSURING FUNCTIONALITY",
     "PIXEL PERFECT",
     "MODERN DESIGN APPROACH",
+    "RESPONSIVE DESIGN",
   ];
   return (
     <div className="page flex flex-col gap-9">

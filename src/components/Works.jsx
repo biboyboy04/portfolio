@@ -17,7 +17,6 @@ import { TbBrandCSharp } from "react-icons/tb";
 
 import { SiGithub, SiTensorflow, SiTailwindcss } from "react-icons/si";
 const Works = () => {
-  const works = {};
   return (
     <div className="min-h-screen w-full pt-[120px] xl:pt-[130px]">
       <motion.div
@@ -74,7 +73,10 @@ const Works = () => {
       </motion.div>
       <div className="flex flex-col gap-[450px] leading-[5rem] md:leading-[9rem] xl:gap-[50px] xl:leading-[12rem]">
         {/* Project 1 */}
-        <div className="relative mt-[110px] w-full px-6 text-white/90 xl:mt-[200px] xl:px-24">
+        <div
+          id="project"
+          className="relative mt-[110px] w-full px-6 text-white/90 xl:mt-[200px] xl:px-24"
+        >
           <motion.div
             variants={fadeIn("right", 0.4)}
             initial="hidden"
@@ -118,7 +120,10 @@ const Works = () => {
           </Tilt>
         </div>
         {/* Project 2 */}
-        <div className="relative ml-auto mt-[110px] w-full px-6 text-right text-white/90 xl:mt-[200px] xl:px-24">
+        <div
+          id="project"
+          className="relative ml-auto mt-[110px] w-full px-6 text-right text-white/90 xl:mt-[200px] xl:px-24"
+        >
           <motion.div
             variants={fadeIn("left", 0.4)}
             initial="hidden"
@@ -164,7 +169,10 @@ const Works = () => {
           </Tilt>
         </div>
         {/* Project 3 */}
-        <div className="relative mt-[100px] w-full px-6 text-white/90 md:-mt-[150px] lg:mt-28  xl:px-24">
+        <div
+          id="project"
+          className="relative mt-[100px] w-full px-6 text-white/90 md:-mt-[150px] lg:mt-28  xl:px-24"
+        >
           <motion.div
             variants={fadeIn("right", 0.4)}
             initial="hidden"

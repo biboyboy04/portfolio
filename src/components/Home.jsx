@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../variants.js";
 const Home = () => {
   return (
-    <div className="page -mt-[120px] flex items-center justify-center xl:-mt-[8%] ">
-      <div className="align-center flex justify-center">
+    <div className="page -mt-[120px] flex items-center justify-center xl:mt-0">
+      <div className="flex items-center justify-center">
         {/* text container */}
-        <div className=" text-center text-[80px]  text-white xl:text-[100px]">
+        <div className=" text-center text-[80px] font-semibold  text-white xl:text-[100px]">
           <motion.h1
             variants={fadeIn("right", 0.4)}
             initial="hidden"
