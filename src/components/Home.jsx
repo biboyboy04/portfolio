@@ -3,14 +3,19 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../variants.js";
 const Home = () => {
   return (
+<<<<<<< Updated upstream
     <div className="page -mt-[8%] flex items-center justify-center ">
       <div className="align-center flex justify-center">
+=======
+    <div className="page flex items-center justify-center">
+      <div className="flex items-center justify-center">
+>>>>>>> Stashed changes
         {/* text container */}
-        <div className=" text-center text-[80px]  text-white xl:text-[100px]">
+        <div className="-mt-[180px] text-center text-[80px] font-bold text-white lg:-mt-[120px] xl:text-[100px]">
           <motion.h1
             variants={fadeIn("right", 0.4)}
             initial="hidden"
-            animate="show"
+            whileInView="show"
             exit="hidden"
             className="md:mr-[400px] lg:mr-[600px]"
           >
@@ -19,7 +24,7 @@ const Home = () => {
           <motion.h1
             variants={fadeIn("left", 0.8)}
             initial="hidden"
-            animate="show"
+            whileInView="show"
             exit="hidden"
             className="md:ml-[400px] lg:ml-[600px]"
           >
@@ -31,7 +36,7 @@ const Home = () => {
         <div className="absolute">
           <motion.img
             initial={{ opacity: 0 }}
-            animate={{
+            whileInView={{
               opacity: 1,
             }}
             transition={{ ease: "easeIn", duration: 1.5 }}
@@ -45,7 +50,7 @@ const Home = () => {
           />
           <motion.p
             initial={{ opacity: 0 }}
-            animate={{
+            whileInView={{
               opacity: 1,
             }}
             transition={{ ease: "easeIn", duration: 0.5, delay: 1 }}
