@@ -2,24 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  width: 100vw;
-  min-height: 100vh;
-  height: 100vh;
-  background: rgba(15, 15, 15);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start; /* double check */
-  padding: 0;
-  margin: 0;
-}
-
-body,
-html {
-  scroll-behavior: smooth;
-}
-
 *,
 **,
 ::before,
@@ -27,4 +9,28 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+  background: rgba(15, 15, 15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* double check */
+}
+
+@layer base {
+  .page {
+    @apply h-screen w-full overflow-hidden;
+  }
 }
