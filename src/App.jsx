@@ -27,6 +27,7 @@ export default function App() {
           "select",
           "textarea",
           "button",
+          "h1",
           "#project",
           {
             target: "#project",
