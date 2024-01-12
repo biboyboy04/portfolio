@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../variants.js";
 const Home = () => {
   return (
-    <div className="page -mt-[8%] flex items-center justify-center ">
+    <div className="page -mt-[120px] flex items-center justify-center xl:-mt-[8%] ">
       <div className="align-center flex justify-center">
         {/* text container */}
         <div className=" text-center text-[80px]  text-white xl:text-[100px]">
