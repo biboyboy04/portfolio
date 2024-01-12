@@ -1,16 +1,40 @@
+import { motion } from "framer-motion";
+
+import { fadeIn } from "../../variants.js";
 const Home = () => {
   return (
-    <div className="-mt-[8%] flex h-[100vh] items-center justify-center">
+    <div className="page -mt-[8%] flex items-center justify-center ">
       <div className="align-center flex justify-center">
         {/* text container */}
         <div className=" text-center text-[80px]  text-white xl:text-[100px]">
-          <h1 className="md:mr-[400px] lg:mr-[600px]">ADRIAN</h1>
-          <h1 className="md:ml-[400px] lg:ml-[600px]">ZAPATA</h1>
+          <motion.h1
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="md:mr-[400px] lg:mr-[600px]"
+          >
+            ADRIAN
+          </motion.h1>
+          <motion.h1
+            variants={fadeIn("left", 0.8)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="md:ml-[400px] lg:ml-[600px]"
+          >
+            ZAPATA
+          </motion.h1>
         </div>
 
         {/* img container */}
         <div className="absolute">
-          <img
+          <motion.img
+            initial={{ opacity: 0 }}
+            animate={{
+              opacity: 1,
+            }}
+            transition={{ ease: "easeIn", duration: 1.5 }}
             src="/images/ian.png"
             alt="Ian"
             className=" interactivity-none mix-blend-color-dodge"
@@ -19,9 +43,16 @@ const Home = () => {
                 "linear-gradient(to bottom, rgba(200, 200, 200), rgba(255, 102, 0, 0))", // Adjust colors and opacity as needed
             }}
           />
-          <p className="-mt-9 text-center text-[20px] text-white/70">
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{
+              opacity: 1,
+            }}
+            transition={{ ease: "easeIn", duration: 0.5, delay: 1 }}
+            className="-mt-9 text-center text-[20px] text-white/70"
+          >
             WEB DEVELOPER
-          </p>
+          </motion.p>
         </div>
       </div>
     </div>
