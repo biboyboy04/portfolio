@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-
 import { fadeIn } from "../../variants.js";
 const Home = () => {
   return (
