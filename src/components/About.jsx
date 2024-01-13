@@ -17,7 +17,7 @@ const Home = () => {
       <Marquee
         autoFill={true}
         speed={100}
-        className="opacity-59 w-[100vw] bg-black/30 text-[60px] text-white/60 xl:text-[80px]"
+        className=" w-[100vw] bg-black/90 text-[60px] text-white/60 xl:text-[80px]"
       >
         <h1 className="pl-5 ">ABOUT ME </h1>
         <h1 className="pl-5 font-bold">ABOUT ME </h1>

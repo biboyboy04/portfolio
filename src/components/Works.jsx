@@ -27,7 +27,7 @@ const Works = () => {
         whileInView={{ rotate: "5deg" }}
         exit={{ rotate: "0 deg" }}
         viewport={{ once: true }}
-        className="opacity-59 w-[100vw]  bg-black/30 text-[60px] text-white/60 xl:text-[80px]"
+        className="opacity-59 w-[100vw]  bg-black/90 text-[60px] text-white/60 xl:text-[80px]"
       >
         <Marquee autoFill={true} speed={100} className="">
           <h1 className="pl-5 ">WORKS </h1>
@@ -40,7 +40,7 @@ const Works = () => {
         whileInView={{ rotate: "-9deg" }}
         exit={{ rotate: "0 deg" }}
         viewport={{ once: true }}
-        className="-ml-10 w-[110vw] bg-black/30 text-[60px] text-white/60 xl:text-[80px]"
+        className="-ml-10 w-[110vw] bg-black/90 py-3.5 text-[60px] text-white/60 xl:text-[80px]"
       >
         <Marquee
           autoFill={true}
@@ -104,7 +104,7 @@ const Works = () => {
               whileInView="show"
               viewport={{ once: true }}
               exit="hidden"
-              className="flex w-full flex-col gap-4 rounded-lg border border-gray-200 bg-black/80 px-4 py-8 shadow  dark:border-gray-700 dark:bg-gray-800"
+              className="flex w-full flex-col gap-4 rounded-lg border border-gray-200 bg-black/90 px-4 py-8 shadow  "
             >
               <div className="flex w-full justify-center text-[50px]">
                 <FaReact />
@@ -164,7 +164,7 @@ const Works = () => {
               whileInView="show"
               viewport={{ once: true }}
               exit="hidden"
-              className="flex flex-col gap-4  rounded-lg border border-gray-200 bg-black/80  px-4 py-8 shadow dark:border-gray-700 dark:bg-gray-800"
+              className="flex flex-col gap-4  rounded-lg border border-gray-200 bg-black/90  px-4 py-8 shadow "
             >
               <div className="flex w-full justify-center text-[50px]">
                 <FaHtml5 />
@@ -217,7 +217,7 @@ const Works = () => {
               whileInView="show"
               viewport={{ once: true }}
               exit="hidden"
-              className="flex flex-col gap-4 rounded-lg border border-gray-200 bg-black/80 px-4 py-8 shadow dark:border-gray-700 dark:bg-gray-800"
+              className="flex flex-col gap-4 rounded-lg border border-gray-200 bg-black/90 px-4 py-8 shadow "
             >
               <div className="flex w-full justify-center text-[50px]">
                 <FaHtml5 />
