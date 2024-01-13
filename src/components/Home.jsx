@@ -6,7 +6,10 @@ import ScrollAnim from "../../scrollAnim.json";
 import Lottie from "lottie-react";
 const Home = () => {
   return (
-    <div id="home" className="page  flex items-center justify-center lg:mt-0">
+    <div
+      id="home"
+      className="page -mt-10 flex items-center justify-center md:mt-0"
+    >
       <div className="flex items-center justify-center">
         {/* text container */}
         <div className=" text-center text-[80px] font-semibold  text-white xl:text-[100px]">

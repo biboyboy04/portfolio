@@ -24,7 +24,7 @@ import { SiGithub, SiTensorflow, SiTailwindcss } from "react-icons/si";
 const Works = () => {
   return (
     <div id="works" className="min-h-screen w-full pt-[120px] xl:pt-[130px]">
-      <div className="opacity-59 w-[100vw] rotate-[5deg]  bg-black/90 text-[60px] text-white/60 xl:text-[80px]">
+      <div className="opacity-59 -ml-1 w-[103vw] rotate-[5deg]  bg-black/90 text-[60px] text-white/60 xl:text-[80px]">
         <Marquee autoFill={true} speed={100}>
           <h1 className="pl-5 ">WORKS </h1>
           <h1 className="pl-5 font-bold">WORKS </h1>
@@ -32,7 +32,7 @@ const Works = () => {
         </Marquee>
       </div>
 
-      <div className="-ml-10 w-[110vw] -rotate-[9deg] bg-black/90 py-3.5 text-[60px] text-white/60 xl:text-[80px]">
+      <div className="-ml-5 w-[110vw] -rotate-[9deg] bg-black/90 py-3.5 text-[60px] text-white/60 xl:text-[80px]">
         <Marquee
           autoFill={true}
           direction="right"
