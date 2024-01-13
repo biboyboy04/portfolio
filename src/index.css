@@ -32,7 +32,7 @@ body {
 
 @layer base {
   body {
-    @apply scrollbar-thumb-black/90 scrollbar-track-gray-100/50 scrollbar-thin scrollbar-thumb-rounded-full scrollbar-track-rounded-full;
+    @apply scrollbar-thin scrollbar-track-gray-100/50 scrollbar-thumb-black/90 scrollbar-track-rounded-full scrollbar-thumb-rounded-full;
   }
   .page {
     @apply min-h-screen w-full overflow-hidden;

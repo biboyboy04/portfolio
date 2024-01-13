@@ -24,50 +24,50 @@ import { SiGithub, SiTensorflow, SiTailwindcss } from "react-icons/si";
 const Works = () => {
   return (
     <div id="works" className="min-h-screen w-full pt-[120px] xl:pt-[130px]">
-      <Marquee
-        autoFill={true}
-        speed={100}
-        className="opacity-59 w-[100vw] rotate-[5deg]  bg-black/90 text-[60px] text-white/60 xl:text-[80px]"
-      >
-        <h1 className="pl-5 ">WORKS </h1>
-        <h1 className="pl-5 font-bold">WORKS </h1>
-        <h1 className="pl-5 font-thin">WORKS </h1>
-      </Marquee>
+      <div className="opacity-59 w-[100vw] rotate-[5deg]  bg-black/90 text-[60px] text-white/60 xl:text-[80px]">
+        <Marquee autoFill={true} speed={100}>
+          <h1 className="pl-5 ">WORKS </h1>
+          <h1 className="pl-5 font-bold">WORKS </h1>
+          <h1 className="pl-5 font-thin">WORKS </h1>
+        </Marquee>
+      </div>
 
-      <Marquee
-        autoFill={true}
-        direction="right"
-        speed={100}
-        // bg-white/80 text-[60px] text-black/80
-        className="-ml-10 w-[110vw] -rotate-[9deg] bg-black/90 py-3.5 text-[60px] text-white/60 xl:text-[80px]"
-      >
-        {" "}
-        <FaReact />
-        <FaPhp />
-        <FaDatabase />
-        <FaPython />
-        <FaCss3Alt />
-        <FaUnity />
-        <FaJs />
-        <FaHtml5 />
-        <TbBrandCSharp />
-        <SiGithub />
-        <SiTensorflow />
-        <SiTailwindcss />
-        {/* <FaUnity />
-            <FaReact color="#00d8ff" />
-            <FaPhp color="#787cb5" />
-            <FaDatabase color="#00758F" />
-            <TbBrandCSharp color="#68217a" />
-            <FaPython color="#306998" />
-            <SiTailwindcss color="#06b6d4" />
-            <SiGithub color="#211F1F" />
-            <SiTensorflow color="#ff6f61" />
-            <FaUnity color="#000000" />
-            <FaJs color="#f7df1e" />
-            <FaCss3Alt color="#1572b6" />
-            <FaHtml5 color="#e34c26" /> */}
-      </Marquee>
+      <div className="-ml-10 w-[110vw] -rotate-[9deg] bg-black/90 py-3.5 text-[60px] text-white/60 xl:text-[80px]">
+        <Marquee
+          autoFill={true}
+          direction="right"
+          speed={100}
+          // bg-white/80 text-[60px] text-black/80
+          className=""
+        >
+          {" "}
+          <FaReact />
+          <FaPhp />
+          <FaDatabase />
+          <FaPython />
+          <FaCss3Alt />
+          <FaUnity />
+          <FaJs />
+          <FaHtml5 />
+          <TbBrandCSharp />
+          <SiGithub />
+          <SiTensorflow />
+          <SiTailwindcss />
+          {/* <FaUnity />
+              <FaReact color="#00d8ff" />
+              <FaPhp color="#787cb5" />
+              <FaDatabase color="#00758F" />
+              <TbBrandCSharp color="#68217a" />
+              <FaPython color="#306998" />
+              <SiTailwindcss color="#06b6d4" />
+              <SiGithub color="#211F1F" />
+              <SiTensorflow color="#ff6f61" />
+              <FaUnity color="#000000" />
+              <FaJs color="#f7df1e" />
+              <FaCss3Alt color="#1572b6" />
+              <FaHtml5 color="#e34c26" /> */}
+        </Marquee>
+      </div>
 
       <div className="flex flex-col gap-[480px] leading-[5rem] md:leading-[9rem] lg:gap-[400px] xl:gap-[50px] xl:pt-[80px] xl:leading-[12rem]">
         {/* Project 1 */}
