@@ -1,9 +1,6 @@
 import MyImage from "/images/ian.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants.js";
-
-import ScrollAnim from "../../scrollAnim.json";
-import Lottie from "lottie-react";
 const Home = () => {
   return (
     <div
@@ -36,7 +33,7 @@ const Home = () => {
         </div>
 
         {/* img container */}
-        <div className="absolute">
+        <div className="absolute ">
           <motion.img
             initial={{ opacity: 0 }}
             viewport={{ once: true }}
@@ -48,7 +45,7 @@ const Home = () => {
             src={MyImage}
             loading="lazy"
             alt="Ian"
-            className=" interactivity-none mix-blend-color-dodge"
+            className="interactivity-none  mix-blend-color-dodge"
             style={{
               background:
                 "linear-gradient(to bottom, rgba(200, 200, 200), rgba(255, 102, 0, 0))", // Adjust colors and opacity as needed
@@ -68,23 +65,6 @@ const Home = () => {
           </motion.p>
         </div>
       </div>
-      <motion.a
-        initial={{ opacity: 0 }}
-        viewport={{ once: true }}
-        whileInView={{
-          opacity: 1,
-        }}
-        transition={{ ease: "easeOut", duration: 1, delay: 1.55 }}
-        exit={{ opacity: 0 }}
-        href="#about"
-        className="absolute bottom-20 overflow-hidden lg:bottom-5 "
-      >
-        <Lottie
-          animationData={ScrollAnim}
-          loop={true}
-          className="h-[60px] opacity-50"
-        />
-      </motion.a>
     </div>
   );
 };
