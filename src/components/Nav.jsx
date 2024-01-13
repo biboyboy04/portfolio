@@ -6,12 +6,13 @@ import {
   HiChatBubbleBottomCenterText,
   HiEnvelope,
 } from "react-icons/hi2";
+import { useState, useEffect } from "react";
 
 export const navData = [
-  { name: "home", path: "/", icon: <HiHome /> },
-  { name: "about", path: "/about", icon: <HiUser /> },
+  { name: "home", path: "#home", icon: <HiHome /> },
+  { name: "about", path: "#about", icon: <HiUser /> },
   // { name: "services", path: "/services", icon: <HiRectangleGroup /> },
-  { name: "work", path: "/work", icon: <HiViewColumns /> },
+  { name: "works", path: "#works", icon: <HiViewColumns /> },
   // {
   //   name: "testimonials",
   //   path: "/testimonials",
@@ -19,7 +20,7 @@ export const navData = [
   // },
   {
     name: "contact",
-    path: "/contact",
+    path: "#contact",
     icon: <HiEnvelope />,
   },
 ];
@@ -31,24 +32,24 @@ const Nav = () => {
       <div className="flex h-[80px] w-full items-center justify-between gap-y-10 bg-white/10 px-4 py-8 text-3xl backdrop-blur-sm md:px-10 lg:h-max lg:flex-col lg:justify-center  lg:rounded-full lg:text-xl xl:px-0">
         {navData.map((link, index) => {
           return (
-            <div
-              className={`group relative flex items-center text-white transition-all duration-300 hover:text-black`}
-              to={link.path}
-              key={index}
-            >
-              {/* tooltip */}
-              <div className="absolute right-0 hidden pr-14 xl:group-hover:flex">
-                <div className="text-primary relative flex items-center rounded-[3px] bg-white p-[6px] ">
-                  <div className="text-[12px] font-semibold capitalize leading-none">
-                    {link.name}
+            <a href={link.path} key={index}>
+              <div
+                className={` group relative flex items-center text-white transition-all duration-300 hover:text-black`}
+              >
+                {/* tooltip */}
+                <div className="absolute right-0 hidden pr-14 xl:group-hover:flex">
+                  <div className="text-primary relative flex items-center rounded-[3px] bg-white p-[6px] ">
+                    <div className="text-[12px] font-semibold capitalize leading-none">
+                      {link.name}
+                    </div>
+                    {/* triangle */}
+                    <div className="absolute -right-2 border-y-[6px] border-l-8 border-r-0 border-solid border-y-transparent border-l-white"></div>
                   </div>
-                  {/* triangle */}
-                  <div className="absolute -right-2 border-y-[6px] border-l-8 border-r-0 border-solid border-y-transparent border-l-white"></div>
                 </div>
+                {/* icon */}
+                <div>{link.icon}</div>
               </div>
-              {/* icon */}
-              <div>{link.icon}</div>
-            </div>
+            </a>
           );
         })}
       </div>

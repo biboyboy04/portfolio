@@ -4,11 +4,14 @@ import Nav from "./components/Nav";
 import Logo from "./components/Logo";
 import About from "./components/About";
 import Works from "./components/Works";
+import Contact from "./components/Contact";
 import AnimatedCursor from "react-animated-cursor";
+import Transition from "./components/Transition";
 import { useState } from "react";
 export default function App() {
   return (
     <div className="w-[100vw] overflow-y-auto overflow-x-hidden">
+      <Transition />
       <AnimatedCursor
         color="white"
         innerSize={8}
@@ -30,14 +33,14 @@ export default function App() {
           "h1",
           "#project",
           {
-            target: "#project",
+            target: "h1",
             options: {
               innerSize: 12,
               outerSize: 12,
               color: "255, 255, 255",
               outerAlpha: 0.3,
               innerScale: 1.7,
-              outerScale: 30,
+              outerScale: 4,
             },
           },
         ]}
@@ -57,7 +60,11 @@ export default function App() {
       <Home />
       <About />
       <Works />
-      <div className="page"></div>
+
+      <Contact />
+      <footer className="text-center font-thin text-white">
+        &copy; 2024. All Rights Reserved.
+      </footer>
     </div>
   );
 }

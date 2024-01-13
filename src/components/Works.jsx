@@ -12,17 +12,21 @@ import {
   FaUnity,
   FaJs,
   FaHtml5,
+  FaArrowRight,
+  FaArrowAltCircleRight,
+  FaArrowCircleRight,
 } from "react-icons/fa";
 import { TbBrandCSharp } from "react-icons/tb";
 
 import { SiGithub, SiTensorflow, SiTailwindcss } from "react-icons/si";
 const Works = () => {
   return (
-    <div className="min-h-screen w-full pt-[120px] xl:pt-[130px]">
+    <div id="works" className="min-h-screen w-full pt-[120px] xl:pt-[130px]">
       <motion.div
         transition={{ duration: 0.1, ease: "easeOut", delay: 0.5 }}
         whileInView={{ rotate: "5deg" }}
         exit={{ rotate: "0 deg" }}
+        viewport={{ once: true }}
         className="opacity-59 w-[100vw]  bg-black/30 text-[60px] text-white/60 xl:text-[80px]"
       >
         <Marquee autoFill={true} speed={100} className="">
@@ -35,6 +39,7 @@ const Works = () => {
         transition={{ duration: 0.1, ease: "easeOut", delay: 0.5 }}
         whileInView={{ rotate: "-9deg" }}
         exit={{ rotate: "0 deg" }}
+        viewport={{ once: true }}
         className="-ml-10 w-[110vw] bg-black/30 text-[60px] text-white/60 xl:text-[80px]"
       >
         <Marquee
@@ -71,7 +76,7 @@ const Works = () => {
             <FaHtml5 color="#e34c26" /> */}
         </Marquee>
       </motion.div>
-      <div className="flex flex-col gap-[450px] leading-[5rem] md:leading-[9rem] xl:gap-[50px] xl:leading-[12rem]">
+      <div className="flex flex-col gap-[450px] leading-[5rem] md:leading-[9rem] xl:gap-[50px] xl:pt-[80px] xl:leading-[12rem]">
         {/* Project 1 */}
         <div
           id="project"
@@ -81,6 +86,7 @@ const Works = () => {
             variants={fadeIn("right", 0.4)}
             initial="hidden"
             whileInView="show"
+            viewport={{ once: true }}
             exit="hidden"
             className=" w-[60px]  "
           >
@@ -93,9 +99,10 @@ const Works = () => {
 
           <Tilt className="absolute left-[10%] top-[150px] ml-auto  max-w-sm  md:left-[40%] xl:left-[750px] ">
             <motion.div
-              variants={fadeIn("down", 0.4)}
+              variants={fadeIn("down", 0.3)}
               initial="hidden"
               whileInView="show"
+              viewport={{ once: true }}
               exit="hidden"
               className="flex w-full flex-col gap-4 rounded-lg border border-gray-200 bg-black/80 px-4 py-8 shadow  dark:border-gray-700 dark:bg-gray-800"
             >
@@ -107,27 +114,36 @@ const Works = () => {
                 <FaPython />
                 <SiTensorflow />
               </div>
-              <a href="#">
+              <div>
                 <img className="rounded-xl" src="/images/emo-chan.gif" alt="" />
-              </a>
-              <p className="px-2 font-semibold uppercase leading-normal">
+              </div>
+              <p className="px-2 font-thin uppercase leading-normal">
                 Experience an AI-powered e-book reader web app that analyzes the
                 text in the current chapter to identify the dominant emotion.
                 The application then recommends a emotionally appropriate
                 playlist using the Spotify API based on the detected emotion.
               </p>
+              <a
+                href="https://biboyboy04.github.io/Emo-chan"
+                target="_blank"
+                rel="noreferrer"
+                className=""
+              >
+                <FaArrowCircleRight className=" ml-auto mr-3 text-[40px] " />
+              </a>
             </motion.div>
           </Tilt>
         </div>
         {/* Project 2 */}
         <div
           id="project"
-          className="relative ml-auto mt-[110px] w-full px-6 text-right text-white/90 xl:mt-[200px] xl:px-24"
+          className="relative ml-auto mt-[110px] w-full px-6 text-right text-white/90 xl:mt-[250px] xl:px-24"
         >
           <motion.div
             variants={fadeIn("left", 0.4)}
             initial="hidden"
             whileInView="show"
+            viewport={{ once: true }}
             exit="hidden"
             className="w-[60px]leading-[7rem] xl:leading-[12rem]"
           >
@@ -143,9 +159,10 @@ const Works = () => {
           </motion.div>
           <Tilt className="absolute right-[10%] top-[300px] ml-auto flex max-w-sm flex-col gap-4 md:right-[35%]   md:top-[200px]">
             <motion.div
-              variants={fadeIn("right", 0.4)}
+              variants={fadeIn("right", 0.3)}
               initial="hidden"
               whileInView="show"
+              viewport={{ once: true }}
               exit="hidden"
               className="flex flex-col gap-4  rounded-lg border border-gray-200 bg-black/80  px-4 py-8 shadow dark:border-gray-700 dark:bg-gray-800"
             >
@@ -159,24 +176,33 @@ const Works = () => {
               <a href="#">
                 <img className="rounded-xl" src="/images/too.gif" alt="" />
               </a>
-              <p className="px-2 text-left font-semibold uppercase leading-normal">
+              <p className="px-2 text-left   font-thin uppercase leading-normal">
                 Explore a captivating 2D platformer mobile game featuring
                 dynamic combat, numerous challenging levels, and epic boss
                 encounters. Developed in Unity, the game is now available for
                 download on the landing page.
               </p>
+              <a
+                href="https://biboyboy04.github.io/Tower-of-Ouroboros-Landing-Page/"
+                target="_blank"
+                rel="noreferrer"
+                className=""
+              >
+                <FaArrowCircleRight className=" ml-auto mr-3 text-[40px] " />
+              </a>
             </motion.div>
           </Tilt>
         </div>
         {/* Project 3 */}
         <div
           id="project"
-          className="relative mt-[100px] w-full px-6 text-white/90 md:-mt-[150px] lg:mt-28  xl:px-24"
+          className="relative mt-[100px] w-full px-6 text-white/90 md:-mt-[150px] lg:mt-14  xl:px-24"
         >
           <motion.div
             variants={fadeIn("right", 0.4)}
             initial="hidden"
             whileInView="show"
+            viewport={{ once: true }}
             exit="hidden"
             className=" w-[60px]  "
           >
@@ -186,9 +212,10 @@ const Works = () => {
           </motion.div>
           <Tilt className="absolute left-[10%] top-[70px] ml-auto  max-w-sm  md:left-[40%]  xl:left-[30%] xl:top-[120px] ">
             <motion.div
-              variants={fadeIn("up", 0.4)}
+              variants={fadeIn("up", 0.3)}
               initial="hidden"
               whileInView="show"
+              viewport={{ once: true }}
               exit="hidden"
               className="flex flex-col gap-4 rounded-lg border border-gray-200 bg-black/80 px-4 py-8 shadow dark:border-gray-700 dark:bg-gray-800"
             >
@@ -203,7 +230,7 @@ const Works = () => {
               <a href="#">
                 <img className="rounded-xl" src="/images/serb.gif" alt="" />
               </a>
-              <p className="px-2 font-semibold uppercase leading-normal">
+              <p className="px-2   font-thin uppercase leading-normal">
                 A web app featuring user and admin login functionalities. Users
                 can book services and manage their bookings, while admins have
                 control over users, services, and requests. The application is
@@ -211,6 +238,9 @@ const Works = () => {
                 website. It is implemented using PHP and styled with Tailwind
                 CSS.
               </p>
+              <a href="#" className="">
+                <FaArrowCircleRight className=" ml-auto mr-3 text-[40px] " />
+              </a>
             </motion.div>
           </Tilt>
         </div>

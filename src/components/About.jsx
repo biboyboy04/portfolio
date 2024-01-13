@@ -13,7 +13,7 @@ const Home = () => {
     "RESPONSIVE DESIGN",
   ];
   return (
-    <div className="page flex flex-col gap-9">
+    <div id="about" className="page flex flex-col gap-9">
       <Marquee
         autoFill={true}
         speed={100}
