@@ -1,11 +1,12 @@
+import MyImage from "/images/ian.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants.js";
+
+import ScrollAnim from "../../scrollAnim.json";
+import Lottie from "lottie-react";
 const Home = () => {
   return (
-    <div
-      id="home"
-      className="page -mt-[120px] flex items-center justify-center xl:mt-0"
-    >
+    <div id="home" className="page  flex items-center justify-center lg:mt-0">
       <div className="flex items-center justify-center">
         {/* text container */}
         <div className=" text-center text-[80px] font-semibold  text-white xl:text-[100px]">
@@ -39,9 +40,10 @@ const Home = () => {
             whileInView={{
               opacity: 1,
             }}
-            transition={{ ease: "easeIn", duration: 1.5, delaty: 0.4 }}
+            transition={{ ease: "easeIn", duration: 1.5, delay: 0.4 }}
             exit={{ opacity: 0 }}
-            src="/images/ian.png"
+            src={MyImage}
+            loading="lazy"
             alt="Ian"
             className=" interactivity-none mix-blend-color-dodge"
             style={{
@@ -63,6 +65,23 @@ const Home = () => {
           </motion.p>
         </div>
       </div>
+      <motion.a
+        initial={{ opacity: 0 }}
+        viewport={{ once: true }}
+        whileInView={{
+          opacity: 1,
+        }}
+        transition={{ ease: "easeOut", duration: 1, delay: 1.55 }}
+        exit={{ opacity: 0 }}
+        href="#about"
+        className="absolute bottom-20 overflow-hidden lg:bottom-5 "
+      >
+        <Lottie
+          animationData={ScrollAnim}
+          loop={true}
+          className="h-[60px] opacity-50"
+        />
+      </motion.a>
     </div>
   );
 };
