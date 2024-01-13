@@ -27,7 +27,7 @@ export const navData = [
 
 const Nav = () => {
   return (
-    <nav className="fixed bottom-0 right-0 z-50 flex h-max w-full flex-col items-center gap-y-4 lg:right-[2%] lg:h-screen lg:w-16 lg:max-w-lg lg:justify-center">
+    <nav className="fixed bottom-0 right-0 z-10 flex h-max w-full flex-col items-center gap-y-4 lg:right-[2%] lg:h-screen lg:w-16 lg:max-w-lg lg:justify-center">
       {/* inner */}
       <div className="flex h-[80px] w-full items-center justify-between gap-y-10 bg-white/10 px-4 py-8 text-3xl backdrop-blur-sm md:px-5 lg:h-max  lg:flex-col lg:justify-center  lg:rounded-full lg:text-xl xl:px-0">
         {navData.map((link, index) => {
