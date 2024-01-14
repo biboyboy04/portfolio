@@ -136,7 +136,7 @@ const Works = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaArrowCircleRight className=" ml-auto mr-3 text-[40px] " />
+                  <FaArrowCircleRight />
                 </a>
               </div>
             </motion.div>
@@ -204,7 +204,7 @@ const Works = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaArrowCircleRight className=" ml-auto mr-3 text-[40px] " />
+                  <FaArrowCircleRight />
                 </a>
               </div>
             </motion.div>

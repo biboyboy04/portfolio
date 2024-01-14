@@ -20,6 +20,7 @@ export default function App() {
         innerScale={1}
         outerScale={1.7}
         outerAlpha={10}
+        trailingSpeed={3}
         clickables={[
           ".custom-link",
           'input[type="text"]',
