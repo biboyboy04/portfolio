@@ -7,7 +7,8 @@ import Works from "./components/Works";
 import Contact from "./components/Contact";
 import AnimatedCursor from "react-animated-cursor";
 import Transition from "./components/Transition";
-import { useState } from "react";
+import { SiGithub } from "react-icons/si";
+
 export default function App() {
   return (
     <div className="w-[100vw] overflow-y-auto overflow-x-hidden">
@@ -62,8 +63,16 @@ export default function App() {
       <Works />
 
       <Contact />
-      <footer className="text-center font-thin text-white">
-        &copy; 2024. All Rights Reserved.
+      <footer className="flex items-center justify-center gap-2 text-[20px] font-thin text-white">
+        <a
+          href="https://github.com/biboyboy04"
+          target="_blank"
+          rel="noreferrer"
+          className="text-[25px]"
+        >
+          <SiGithub />
+        </a>
+        Adrian Zapata 2024. All Rights Reserved.
       </footer>
     </div>
   );

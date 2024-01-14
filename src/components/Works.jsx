@@ -17,6 +17,7 @@ import {
   FaJs,
   FaHtml5,
   FaArrowCircleRight,
+  FaGit,
 } from "react-icons/fa";
 import { TbBrandCSharp } from "react-icons/tb";
 
@@ -121,14 +122,23 @@ const Works = () => {
                 The application then recommends a emotionally appropriate
                 playlist using the Spotify API based on the detected emotion.
               </p>
-              <a
-                href="https://biboyboy04.github.io/Emo-chan"
-                target="_blank"
-                rel="noreferrer"
-                className=""
-              >
-                <FaArrowCircleRight className=" ml-auto mr-3 text-[40px] " />
-              </a>
+
+              <div className="flex justify-between text-[40px]">
+                <a
+                  href=" https://github.com/biboyboy04/Emo-chan"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <SiGithub />
+                </a>
+                <a
+                  href="https://biboyboy04.github.io/Emo-chan"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaArrowCircleRight className=" ml-auto mr-3 text-[40px] " />
+                </a>
+              </div>
             </motion.div>
           </Tilt>
         </div>
@@ -171,23 +181,32 @@ const Works = () => {
                 <FaUnity />
                 <TbBrandCSharp />
               </div>
-              <a href="#">
+              <div>
                 <img className="rounded-xl" src={ToO} loading="lazy" alt="" />
-              </a>
+              </div>
               <p className="px-2 text-left   font-thin uppercase leading-normal">
                 Explore a captivating 2D platformer mobile game featuring
                 dynamic combat, numerous challenging levels, and epic boss
                 encounters. Developed in Unity, the game is now available for
                 download on the landing page.
               </p>
-              <a
-                href="https://biboyboy04.github.io/Tower-of-Ouroboros-Landing-Page/"
-                target="_blank"
-                rel="noreferrer"
-                className=""
-              >
-                <FaArrowCircleRight className=" ml-auto mr-3 text-[40px] " />
-              </a>
+
+              <div className="flex justify-between text-[40px]">
+                <a
+                  href="https://github.com/biboyboy04/TowerOfOuroboros"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <SiGithub />
+                </a>
+                <a
+                  href="https://biboyboy04.github.io/Tower-of-Ouroboros-Landing-Page/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaArrowCircleRight className=" ml-auto mr-3 text-[40px] " />
+                </a>
+              </div>
             </motion.div>
           </Tilt>
         </div>
@@ -225,9 +244,9 @@ const Works = () => {
                 <FaPhp />
                 <FaDatabase />
               </div>
-              <a href="#">
+              <div>
                 <img className="rounded-xl" src={Serb} loading="lazy" alt="" />
-              </a>
+              </div>
               <p className="px-2   font-thin uppercase leading-normal">
                 A web app featuring user and admin login functionalities. Users
                 can book services and manage their bookings, while admins have
@@ -236,9 +255,20 @@ const Works = () => {
                 website. It is implemented using PHP and styled with Tailwind
                 CSS.
               </p>
-              <a href="#" className="">
-                <FaArrowCircleRight className=" ml-auto mr-3 text-[40px] " />
-              </a>
+              <div
+                className="flex justify-between  text-[40px]"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <a
+                  href="https://github.com/biboyboy04/SERB"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <SiGithub />
+                </a>
+                <FaArrowCircleRight />
+              </div>
             </motion.div>
           </Tilt>
         </div>
