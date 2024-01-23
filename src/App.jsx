@@ -11,7 +11,7 @@ import { SiGithub } from "react-icons/si";
 
 export default function App() {
   return (
-    <div className="w-[100vw] overflow-y-auto overflow-x-hidden">
+    <div className="w-[100vw] overflow-y-auto  overflow-x-hidden pb-[100px] lg:pb-0">
       <Transition />
       <AnimatedCursor
         color="white"
