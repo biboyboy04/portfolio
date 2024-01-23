@@ -17,7 +17,6 @@ import {
   FaJs,
   FaHtml5,
   FaArrowCircleRight,
-  FaGit,
 } from "react-icons/fa";
 import { TbBrandCSharp } from "react-icons/tb";
 
@@ -108,9 +107,9 @@ const Works = () => {
                 <FaPython />
                 <SiTensorflow />
               </div>
-              <div>
+              <div className="rounded-xl bg-[url('/images/emoChan-small.png')] bg-cover bg-center">
                 <img
-                  className="rounded-xl"
+                  className="rounded-xl object-cover object-center"
                   src={EmoChan}
                   loading="lazy"
                   alt=""
@@ -132,7 +131,7 @@ const Works = () => {
                   <SiGithub />
                 </a>
                 <a
-                  href="https://biboyboy04.github.io/Emo-chan"
+                  href="https://biboboy04.github.io/Emo-chan"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -181,8 +180,14 @@ const Works = () => {
                 <FaUnity />
                 <TbBrandCSharp />
               </div>
-              <div>
-                <img className="rounded-xl" src={ToO} loading="lazy" alt="" />
+
+              <div className="rounded-xl bg-[url('/images/too-small.png')] bg-cover bg-center">
+                <img
+                  className="rounded-xl object-cover object-center"
+                  src={ToO}
+                  loading="lazy"
+                  alt=""
+                />
               </div>
               <p className="px-2 text-left   font-thin uppercase leading-normal">
                 Explore a captivating 2D platformer mobile game featuring
@@ -244,8 +249,13 @@ const Works = () => {
                 <FaPhp />
                 <FaDatabase />
               </div>
-              <div>
-                <img className="rounded-xl" src={Serb} loading="lazy" alt="" />
+              <div className="rounded-xl bg-[url('/images/serb-small.png')] bg-cover bg-center">
+                <img
+                  className="rounded-xl object-cover object-center"
+                  src={Serb}
+                  loading="lazy"
+                  alt=""
+                />
               </div>
               <p className="px-2   font-thin uppercase leading-normal">
                 A web app featuring user and admin login functionalities. Users

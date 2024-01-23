@@ -34,23 +34,25 @@ const Home = () => {
 
         {/* img container */}
         <div className="absolute ">
-          <motion.img
-            initial={{ opacity: 0 }}
-            viewport={{ once: true }}
-            whileInView={{
-              opacity: 1,
-            }}
-            transition={{ ease: "easeIn", duration: 1.5, delay: 0.4 }}
-            exit={{ opacity: 0 }}
-            src={MyImage}
-            loading="lazy"
-            alt="Ian"
-            className="interactivity-none  mix-blend-color-dodge"
-            style={{
-              background:
-                "linear-gradient(to bottom, rgba(200, 200, 200), rgba(255, 102, 0, 0))", // Adjust colors and opacity as needed
-            }}
-          />
+          <div className="bg-[url('/images/ian-small.png')] bg-cover bg-center mix-blend-color-dodge">
+            <motion.img
+              initial={{ opacity: 0 }}
+              viewport={{ once: true }}
+              whileInView={{
+                opacity: 1,
+              }}
+              transition={{ ease: "easeIn", duration: 1.5, delay: 0.4 }}
+              exit={{ opacity: 0 }}
+              src={MyImage}
+              loading="lazy"
+              alt="Profile Picture"
+              className="interactivity-none object-cover object-center"
+              style={{
+                background:
+                  "linear-gradient(to bottom, rgba(200, 200, 200), rgba(255, 102, 0, 0))", // Adjust colors and opacity as needed
+              }}
+            />
+          </div>
           <motion.p
             initial={{ opacity: 0 }}
             viewport={{ once: true }}
