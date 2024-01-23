@@ -63,7 +63,7 @@ const Home = () => {
             className="-mt-9 text-center text-[20px] font-thin text-white/70"
             exit={{ opacity: 0 }}
           >
-            FULL-STACK WEB DEVELOPER
+            FULL-STACK DEVELOPER
           </motion.p>
         </div>
       </div>
