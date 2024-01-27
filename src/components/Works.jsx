@@ -134,7 +134,7 @@ const Works = () => {
                   <SiGithub />
                 </a>
                 <a
-                  href="https://biboboy04.github.io/Emo-chan"
+                  href="https://biboyboy04.github.io/Emo-chan"
                   target="_blank"
                   rel="noreferrer"
                 >
