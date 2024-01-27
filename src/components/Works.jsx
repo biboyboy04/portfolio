@@ -386,12 +386,10 @@ const Works = () => {
             className="flex flex-col gap-4 rounded-lg border border-gray-200 bg-black/90 px-4 py-8 shadow "
           >
             <div className="flex w-full justify-center text-[50px]">
+              <FaReact />
               <FaHtml5 />
               <FaCss3Alt />
-              <SiTailwindcss />
               <FaJs />
-              <FaPhp />
-              <FaDatabase />
             </div>
             <div className="rounded-xl bg-[url('/images/serb-small.png')] bg-cover bg-center">
               <img
