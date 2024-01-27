@@ -2,6 +2,7 @@ import EmoChan from "/images/emoChan.gif";
 import ToO from "/images/too.gif";
 import Serb from "/images/serb.gif";
 import InternTrack from "/images/internTrack.gif";
+import MonsterMatcher from "/images/monsterMatcher.gif";
 
 import Marquee from "react-fast-marquee";
 import { motion } from "framer-motion";
@@ -86,7 +87,7 @@ const Works = () => {
             exit="hidden"
             className=" w-[60px]  "
           >
-            <h1 className="text-[100px] font-bold md:text-[135px] xl:text-[250px]">
+            <h1 className="text-[100px] font-bold md:text-[200px] xl:text-[250px]">
               EMO-
               <br />
               CHAN{" "}
@@ -155,7 +156,7 @@ const Works = () => {
             whileInView="show"
             viewport={{ once: true }}
             exit="hidden"
-            className="w-[60px]leading-[7rem] xl:leading-[12rem]"
+            className="xl:leading-[12rem]"
           >
             <h1 className="text-[100px] font-bold md:text-[200px] xl:text-[250px]">
               TOWE
@@ -231,7 +232,7 @@ const Works = () => {
             exit="hidden"
             className=" w-[60px]  "
           >
-            <h1 className="text-[100px] font-bold md:text-[135px] xl:text-[250px]">
+            <h1 className="text-[100px] font-bold md:text-[200px] xl:text-[250px]">
               SERB
             </h1>
           </motion.div>
@@ -296,7 +297,7 @@ const Works = () => {
             whileInView="show"
             viewport={{ once: true }}
             exit="hidden"
-            className="w-[60px]leading-[7rem] xl:leading-[12rem]"
+            className="xl:leading-[12rem]"
           >
             <h1 className="text-[100px] font-bold md:text-[200px] xl:text-[250px]">
               INTERN
@@ -355,6 +356,77 @@ const Works = () => {
             </motion.div>
           </Tilt>
         </div>
+      </div>
+      {/* Project 5 */}
+      <div
+        id="project"
+        className="relative mt-[550px] w-full px-6 text-white/90 md:mt-[570px]  lg:px-[120px]  xl:mt-[500px]"
+      >
+        <motion.div
+          variants={fadeIn("right", 0.4)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          exit="hidden"
+          className="w-[60px] leading-[4rem] md:leading-[7rem] lg:leading-[8.5rem] xl:leading-[12rem] "
+        >
+          <h1 className="text-[80px] font-bold md:text-[150px] lg:text-[180px] xl:text-[250px]">
+            MONSTER
+            <br />
+            MATCHER
+          </h1>
+        </motion.div>
+        <Tilt className="absolute left-[10%] top-[130px] ml-auto max-w-sm  md:left-[45%]  md:top-[190px] lg:left-[55%] lg:top-[200px] xl:left-[65%] xl:top-[260px] ">
+          <motion.div
+            variants={fadeIn("up", 0.3)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            exit="hidden"
+            className="flex flex-col gap-4 rounded-lg border border-gray-200 bg-black/90 px-4 py-8 shadow "
+          >
+            <div className="flex w-full justify-center text-[50px]">
+              <FaHtml5 />
+              <FaCss3Alt />
+              <SiTailwindcss />
+              <FaJs />
+              <FaPhp />
+              <FaDatabase />
+            </div>
+            <div className="rounded-xl bg-[url('/images/serb-small.png')] bg-cover bg-center">
+              <img
+                className="rounded-xl object-cover object-center"
+                src={MonsterMatcher}
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <p className="px-2   font-thin uppercase leading-normal">
+              A monster hunter themed memory card game that has score and high
+              score saved in the local storage.
+            </p>
+            <div
+              className="flex justify-between text-[40px]"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <a
+                href="https://github.com/biboyboy04/memory-game"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <SiGithub />
+              </a>
+              <a
+                href="https://monstermatcher.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaArrowCircleRight />
+              </a>
+            </div>
+          </motion.div>
+        </Tilt>
       </div>
 
       {/* <div className="align-center mt-[200px] flex justify-center gap-24">
