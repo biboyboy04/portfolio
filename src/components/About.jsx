@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../variants.js";
 const Home = () => {
   const aboutText = [
-    "PASSIONATE DEVELOPER",
+    "PASSIONATE",
     "HARDWORKING",
+    "ADAPTABLE",
+    "GROWTH ORIENTED",
     "ADOPTING LATEST TECHNOLOGIES",
     "ENSURING FUNCTIONALITY",
-    "PIXEL PERFECT",
-    "MODERN DESIGN APPROACH",
     "RESPONSIVE DESIGN",
   ];
   return (

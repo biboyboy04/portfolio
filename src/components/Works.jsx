@@ -1,6 +1,7 @@
 import EmoChan from "/images/emoChan.gif";
 import ToO from "/images/too.gif";
 import Serb from "/images/serb.gif";
+import InternTrack from "/images/internTrack.gif";
 
 import Marquee from "react-fast-marquee";
 import { motion } from "framer-motion";
@@ -17,6 +18,7 @@ import {
   FaJs,
   FaHtml5,
   FaArrowCircleRight,
+  FaNode,
 } from "react-icons/fa";
 import { TbBrandCSharp } from "react-icons/tb";
 
@@ -49,6 +51,7 @@ const Works = () => {
           <FaUnity />
           <FaJs />
           <FaHtml5 />
+          <FaNode />
           <TbBrandCSharp />
           <SiGithub />
           <SiTensorflow />
@@ -266,7 +269,7 @@ const Works = () => {
                 CSS.
               </p>
               <div
-                className="flex justify-between  text-[40px]"
+                className="flex text-[40px]"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -274,10 +277,80 @@ const Works = () => {
                   href="https://github.com/biboyboy04/SERB"
                   target="_blank"
                   rel="noreferrer"
+                  className="ml-auto"
                 >
                   <SiGithub />
                 </a>
-                <FaArrowCircleRight />
+              </div>
+            </motion.div>
+          </Tilt>
+        </div>
+        {/* Project 4 */}
+        <div
+          id="project"
+          className="relative ml-auto mt-[110px] w-full px-6 text-right text-white/90  xl:mt-[590px] xl:px-24"
+        >
+          <motion.div
+            variants={fadeIn("left", 0.4)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            exit="hidden"
+            className="w-[60px]leading-[7rem] xl:leading-[12rem]"
+          >
+            <h1 className="text-balance text-[100px] font-bold md:text-[200px] xl:text-[250px]">
+              INTERN
+              <br />
+              TRACK
+            </h1>
+          </motion.div>
+          <Tilt className="absolute right-[10%] top-[300px] ml-auto flex max-w-sm flex-col gap-4 md:right-[40%]  md:top-[300px]">
+            <motion.div
+              variants={fadeIn("right", 0.3)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              exit="hidden"
+              className="flex flex-col gap-4  rounded-lg border border-gray-200 bg-black/90  px-4 py-8 shadow "
+            >
+              <div className="flex w-full justify-center text-[50px]">
+                <FaReact />
+                <SiTailwindcss />
+                <FaHtml5 />
+                <FaCss3Alt />
+                <FaJs />
+                <FaNode />
+              </div>
+
+              <div className="rounded-xl bg-[url('/images/too-small.png')] bg-cover bg-center">
+                <img
+                  className="rounded-xl object-cover object-center"
+                  src={InternTrack}
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
+              <p className="px-2 text-left font-thin uppercase leading-normal">
+                A web app that streamlines the internship application process by
+                allowing users to track application statuses and generate
+                tailored endorsement letters effortlessly.
+              </p>
+
+              <div className="flex justify-between text-[40px]">
+                <a
+                  href="https://github.com/biboyboy04/InternTrack"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <SiGithub />
+                </a>
+                <a
+                  href="https://interntrackk.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaArrowCircleRight />
+                </a>
               </div>
             </motion.div>
           </Tilt>
