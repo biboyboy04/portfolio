@@ -288,7 +288,7 @@ const Works = () => {
         {/* Project 4 */}
         <div
           id="project"
-          className="relative ml-auto mt-[110px] w-full px-6 text-right text-white/90  xl:mt-[590px] xl:px-24"
+          className="relative ml-auto mt-[170px] w-full px-6 text-right text-white/90  xl:mt-[590px] xl:px-24"
         >
           <motion.div
             variants={fadeIn("left", 0.4)}
@@ -298,13 +298,13 @@ const Works = () => {
             exit="hidden"
             className="w-[60px]leading-[7rem] xl:leading-[12rem]"
           >
-            <h1 className="text-balance text-[100px] font-bold md:text-[200px] xl:text-[250px]">
+            <h1 className="text-[100px] font-bold md:text-[200px] xl:text-[250px]">
               INTERN
               <br />
               TRACK
             </h1>
           </motion.div>
-          <Tilt className="absolute right-[10%] top-[300px] ml-auto flex max-w-sm flex-col gap-4 md:right-[40%]  md:top-[300px]">
+          <Tilt className="absolute right-[10%] top-[155px] ml-auto flex max-w-sm flex-col gap-4 md:right-[40%]  md:top-[300px]">
             <motion.div
               variants={fadeIn("right", 0.3)}
               initial="hidden"
