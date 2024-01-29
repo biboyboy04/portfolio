@@ -26,7 +26,7 @@ import { TbBrandCSharp } from "react-icons/tb";
 import { SiGithub, SiTensorflow, SiTailwindcss } from "react-icons/si";
 const Works = () => {
   return (
-    <div id="works" className="min-h-screen w-full pt-[120px] xl:pt-[130px]">
+    <div id="works" className="min-h-screen w-full pt-[200px] xl:pt-[130px]">
       <div className="opacity-59 -ml-1 w-[103vw] rotate-[5deg]  bg-black/90 text-[60px] text-white/60 xl:text-[80px]">
         <Marquee autoFill={true} speed={100}>
           <h1 className="pl-5 ">WORKS </h1>
@@ -73,7 +73,7 @@ const Works = () => {
         </Marquee>
       </div>
 
-      <div className="flex flex-col gap-[480px] leading-[5rem] md:leading-[9rem] lg:gap-[400px] xl:gap-[50px] xl:pt-[80px] xl:leading-[12rem]">
+      <div className="flex flex-col gap-[480px] leading-[5rem] md:pt-[140px] md:leading-[9rem] lg:gap-[400px] xl:gap-[50px] xl:leading-[12rem]">
         {/* Project 1 */}
         <div
           id="project"
@@ -85,7 +85,7 @@ const Works = () => {
             whileInView="show"
             viewport={{ once: true }}
             exit="hidden"
-            className=" w-[60px]  "
+            className=""
           >
             <h1 className="text-[100px] font-bold md:text-[200px] xl:text-[250px]">
               EMO-
@@ -94,7 +94,7 @@ const Works = () => {
             </h1>
           </motion.div>
 
-          <Tilt className="absolute left-[10%] top-[150px] ml-auto  max-w-sm  md:left-[40%] xl:left-[750px] ">
+          <Tilt className="absolute left-[10%] ml-auto max-w-sm  md:left-[40%]  lg:top-[240px] xl:left-[750px] ">
             <motion.div
               variants={fadeIn("down", 0.3)}
               initial="hidden"
@@ -148,7 +148,7 @@ const Works = () => {
         {/* Project 2 */}
         <div
           id="project"
-          className="relative ml-auto mt-[110px] w-full px-6 text-right text-white/90  xl:mt-[330px] xl:px-24"
+          className="relative ml-auto mt-[170px] w-full px-6 text-right text-white/90 lg:mt-[250px]  xl:mt-[460px] xl:px-24"
         >
           <motion.div
             variants={fadeIn("left", 0.4)}
@@ -305,7 +305,7 @@ const Works = () => {
               TRACK
             </h1>
           </motion.div>
-          <Tilt className="absolute right-[10%] top-[155px] ml-auto flex max-w-sm flex-col gap-4 md:right-[40%]  md:top-[300px]">
+          <Tilt className="absolute right-[10%] top-[155px] ml-auto flex max-w-sm flex-col gap-4 md:right-[40%]  md:top-[250px]">
             <motion.div
               variants={fadeIn("right", 0.3)}
               initial="hidden"
@@ -356,75 +356,75 @@ const Works = () => {
             </motion.div>
           </Tilt>
         </div>
-      </div>
-      {/* Project 5 */}
-      <div
-        id="project"
-        className="relative mt-[550px] w-full px-6 text-white/90 md:mt-[570px]  lg:px-[120px]  xl:mt-[500px]"
-      >
-        <motion.div
-          variants={fadeIn("right", 0.4)}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          exit="hidden"
-          className="w-[60px] leading-[4rem] md:leading-[7rem] lg:leading-[8.5rem] xl:leading-[12rem] "
+        {/* Project 5 */}
+        <div
+          id="project"
+          className="relative mt-[100px] w-full px-6 text-white/90 lg:mt-[200px] lg:px-[60px] xl:mt-[490px]"
         >
-          <h1 className="text-[80px] font-bold md:text-[150px] lg:text-[180px] xl:text-[250px]">
-            MONSTER
-            <br />
-            MATCHER
-          </h1>
-        </motion.div>
-        <Tilt className="absolute left-[10%] top-[130px] ml-auto max-w-sm  md:left-[45%]  md:top-[190px] lg:left-[55%] lg:top-[200px] xl:left-[65%] xl:top-[260px] ">
           <motion.div
-            variants={fadeIn("up", 0.3)}
+            variants={fadeIn("right", 0.4)}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
             exit="hidden"
-            className="flex flex-col gap-4 rounded-lg border border-gray-200 bg-black/90 px-4 py-8 shadow "
+            className=""
           >
-            <div className="flex w-full justify-center text-[50px]">
-              <FaReact />
-              <FaHtml5 />
-              <FaCss3Alt />
-              <FaJs />
-            </div>
-            <div className="rounded-xl bg-[url('/images/serb-small.png')] bg-cover bg-center">
-              <img
-                className="rounded-xl object-cover object-center"
-                src={MonsterMatcher}
-                loading="lazy"
-                alt=""
-              />
-            </div>
-            <p className="px-2   font-thin uppercase leading-normal">
-              A monster hunter themed memory card game that has score and high
-              score saved in the local storage.
-            </p>
-            <div
-              className="flex justify-between text-[40px]"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <a
-                href="https://github.com/biboyboy04/memory-game"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <SiGithub />
-              </a>
-              <a
-                href="https://monstermatcher.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaArrowCircleRight />
-              </a>
-            </div>
+            <h1 className="text-[80px] font-bold md:text-[150px] lg:text-[180px] xl:text-[250px]">
+              MONSTER
+              <br />
+              MATCHER
+            </h1>
           </motion.div>
-        </Tilt>
+          <Tilt className="absolute left-[10%] top-[150px] ml-auto max-w-sm  md:left-[45%]  md:top-[250px] lg:left-[55%] lg:top-[200px] xl:left-[65%] xl:top-[260px] ">
+            <motion.div
+              variants={fadeIn("up", 0.3)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              exit="hidden"
+              className="flex flex-col gap-4 rounded-lg border border-gray-200 bg-black/90 px-4 py-8 shadow "
+            >
+              <div className="flex w-full justify-center text-[50px]">
+                <FaReact />
+                <FaHtml5 />
+                <FaCss3Alt />
+                <FaJs />
+              </div>
+              <div className="rounded-xl bg-[url('/images/serb-small.png')] bg-cover bg-center">
+                <img
+                  className="rounded-xl object-cover object-center"
+                  src={MonsterMatcher}
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
+              <p className="px-2   font-thin uppercase leading-normal">
+                A monster hunter themed memory card game that has score and high
+                score saved in the local storage.
+              </p>
+              <div
+                className="flex justify-between text-[40px]"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <a
+                  href="https://github.com/biboyboy04/memory-game"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <SiGithub />
+                </a>
+                <a
+                  href="https://monstermatcher.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaArrowCircleRight />
+                </a>
+              </div>
+            </motion.div>
+          </Tilt>
+        </div>
       </div>
 
       {/* <div className="align-center mt-[200px] flex justify-center gap-24">
