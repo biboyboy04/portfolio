@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import EmoChan from "/images/emoChan.gif";
 import ToO from "/images/too.gif";
 import Serb from "/images/serb.gif";
@@ -39,6 +40,23 @@ import {
   SiTensorflow,
 } from "react-icons/si";
 const Works = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 767px)");
+
+    const updateIsMobile = () => {
+      setIsMobile(mediaQuery.matches);
+    };
+
+    updateIsMobile();
+    mediaQuery.addEventListener("change", updateIsMobile);
+
+    return () => {
+      mediaQuery.removeEventListener("change", updateIsMobile);
+    };
+  }, []);
+
   return (
     <div id="works" className="min-h-screen w-full pt-[200px] xl:pt-[130px]">
       <div className="section-marquee opacity-59 -ml-1 w-[103vw] rotate-[5deg] text-[60px] text-white/60 xl:text-[80px]">
@@ -113,14 +131,17 @@ const Works = () => {
               TAX
             </h1>
           </motion.div>
-          <Tilt className="absolute right-[28%] top-[100px] ml-auto flex max-w-sm flex-col gap-4 md:right-[30%] md:top-[200px] min-[1440px]:right-[30%]">
+          <Tilt
+            tiltEnable={!isMobile}
+            className="absolute right-[15%] top-[150px] ml-auto flex w-[84vw] max-w-sm flex-col gap-4 md:right-[30%] md:top-[200px] min-[1440px]:right-[30%]"
+          >
             <motion.div
               variants={fadeIn("right", 0.3)}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
               exit="hidden"
-              className="aug-panel project-card flex flex-col gap-4 px-4 py-8"
+              className="aug-panel project-card flex w-full flex-col gap-4 px-4 py-8"
             >
               <div className="project-tech-strip flex w-full justify-center gap-2 text-[50px]">
                 <SiNextdotjs />
@@ -137,9 +158,9 @@ const Works = () => {
                 />
               </div>
               <p className="px-2 text-left font-thin leading-normal">
-                A modern EPUB reader with community photo
-                annotations and text-to-speech built with React Native (Expo) for
-                mobile, Next.js for web, and Supabase backend workflows. To enhance the reading experience.
+                A modern EPUB reader with community annotations and text-to-speech,
+                built with React Native (Expo), Next.js for web, and Supabase
+                backend workflows.
               </p>
               <div className="project-links flex justify-between text-[40px]">
                 <a
@@ -181,7 +202,7 @@ const Works = () => {
             </h1>
           </motion.div>
 
-          <Tilt className="absolute left-[10%] ml-auto max-w-sm  md:left-[40%]  lg:top-[240px] xl:left-[750px] ">
+          <Tilt tiltEnable={!isMobile} className="absolute left-[10%] ml-auto max-w-sm  md:left-[40%]  lg:top-[240px] xl:left-[750px] ">
             <motion.div
               variants={fadeIn("down", 0.3)}
               initial="hidden"
@@ -255,7 +276,7 @@ const Works = () => {
               OROS{" "}
             </h1>
           </motion.div>
-          <Tilt className="absolute right-[10%] top-[300px] ml-auto flex max-w-sm flex-col gap-4 md:right-[35%]   md:top-[200px]">
+          <Tilt tiltEnable={!isMobile} className="absolute right-[10%] top-[300px] ml-auto flex max-w-sm flex-col gap-4 md:right-[35%]   md:top-[200px]">
             <motion.div
               variants={fadeIn("right", 0.3)}
               initial="hidden"
@@ -323,7 +344,7 @@ const Works = () => {
               SERB
             </h1>
           </motion.div>
-          <Tilt className="absolute left-[10%] top-[70px] ml-auto  max-w-sm  md:left-[40%]  xl:left-[30%] xl:top-[120px] ">
+          <Tilt tiltEnable={!isMobile} className="absolute left-[10%] top-[70px] ml-auto  max-w-sm  md:left-[40%]  xl:left-[30%] xl:top-[120px] ">
             <motion.div
               variants={fadeIn("up", 0.3)}
               initial="hidden"
@@ -392,7 +413,7 @@ const Works = () => {
               TRACK
             </h1>
           </motion.div>
-          <Tilt className="absolute right-[10%] top-[155px] ml-auto flex max-w-sm flex-col gap-4 md:right-[40%]  md:top-[250px]">
+          <Tilt tiltEnable={!isMobile} className="absolute right-[10%] top-[155px] ml-auto flex max-w-sm flex-col gap-4 md:right-[40%]  md:top-[250px]">
             <motion.div
               variants={fadeIn("right", 0.3)}
               initial="hidden"
@@ -462,7 +483,7 @@ const Works = () => {
               MATCHER
             </h1>
           </motion.div>
-          <Tilt className="absolute left-[10%] top-[150px] ml-auto max-w-sm  md:left-[45%]  md:top-[250px] lg:left-[55%] lg:top-[200px] xl:left-[65%] xl:top-[260px] ">
+          <Tilt tiltEnable={!isMobile} className="absolute left-[10%] top-[150px] ml-auto max-w-sm  md:left-[45%]  md:top-[250px] lg:left-[55%] lg:top-[200px] xl:left-[65%] xl:top-[260px] ">
             <motion.div
               variants={fadeIn("up", 0.3)}
               initial="hidden"

@@ -756,6 +756,29 @@ a {
     width: 42px;
     height: 42px;
   }
+
+  .scroll-cue-wrap {
+    bottom: 6.2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .scroll-cue-wrap {
+    position: static;
+    width: 100%;
+    inset-inline: auto;
+    bottom: auto;
+    margin-top: 1.15rem;
+    margin-bottom: 0.6rem;
+    pointer-events: auto;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .scroll-cue {
+    font-size: 0.58rem;
+    letter-spacing: 0.12em;
+  }
 }
 
 @media (min-width: 960px) {

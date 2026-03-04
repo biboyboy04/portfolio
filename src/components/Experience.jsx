@@ -18,7 +18,7 @@ const experienceData = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="w-full pt-[150px] pb-[150px]">
+    <section id="experience" className="w-full pb-[78px] pt-[150px] md:pb-[150px]">
       <div className="section-shell mx-auto w-full max-w-6xl px-6 xl:px-12">
         <motion.div
           variants={fadeIn("down", 0.25)}
@@ -49,7 +49,9 @@ const Experience = () => {
                 <p className="timeline-role">{item.role}</p>
                 <p className="timeline-company">{item.company}</p>
                 <p className="timeline-meta">
-                  {item.period} | {item.location}
+                  <span className="block md:inline">{item.period}</span>
+                  <span className="hidden md:inline"> | </span>
+                  <span className="block md:inline">{item.location}</span>
                 </p>
               </header>
 

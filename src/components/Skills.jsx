@@ -96,7 +96,7 @@ const skillGroups = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="w-full pb-[90px] pt-[30px]">
+    <section id="skills" className="w-full pb-[52px] pt-[30px] md:pb-[90px]">
       <div className="section-shell mx-auto w-full max-w-6xl px-6 xl:px-12">
         <motion.div
           variants={fadeIn("down", 0.2)}

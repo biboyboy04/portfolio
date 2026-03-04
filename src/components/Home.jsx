@@ -14,7 +14,7 @@ const alignmentStack = [
 
 const Home = () => {
   return (
-    <div id="home" className="page relative -mt-10 flex items-center justify-center md:mt-0">
+    <div id="home" className="page relative -mt-10 flex flex-col items-center justify-center md:mt-0 md:flex-row">
       <div className="flex w-full max-w-6xl flex-col items-center justify-center gap-4 px-6 text-center">
         <div className="hero-title text-[80px] font-semibold xl:text-[100px]">
           <motion.h1
@@ -49,7 +49,11 @@ const Home = () => {
           className="hero-role text-center text-[20px] font-thin"
           exit={{ opacity: 0 }}
         >
-          SOFTWARE ENGINEER | FRONTEND + BACKEND | WEB + MOBILE
+          <span className="block md:inline">SOFTWARE ENGINEER</span>
+          <span className="hidden md:inline"> | </span>
+          <span className="block md:inline">FRONTEND + BACKEND</span>
+          <span className="hidden md:inline"> | </span>
+          <span className="block md:inline">WEB + MOBILE</span>
         </motion.p>
 
         <motion.p
