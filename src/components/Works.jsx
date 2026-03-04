@@ -3,6 +3,7 @@ import ToO from "/images/too.gif";
 import Serb from "/images/serb.gif";
 import InternTrack from "/images/internTrack.gif";
 import MonsterMatcher from "/images/monsterMatcher.gif";
+import AnnotaxGif from "/images/annotax.gif";
 
 import Marquee from "react-fast-marquee";
 import { motion } from "framer-motion";
@@ -23,11 +24,24 @@ import {
 } from "react-icons/fa";
 import { TbBrandCSharp } from "react-icons/tb";
 
-import { SiGithub, SiTensorflow, SiTailwindcss } from "react-icons/si";
+import {
+  SiAndroid,
+  SiApple,
+  SiAzuredevops,
+  SiDocker,
+  SiExpo,
+  SiGithub,
+  SiNextdotjs,
+  SiPlaywright,
+  SiReact,
+  SiSupabase,
+  SiTailwindcss,
+  SiTensorflow,
+} from "react-icons/si";
 const Works = () => {
   return (
     <div id="works" className="min-h-screen w-full pt-[200px] xl:pt-[130px]">
-      <div className="opacity-59 -ml-1 w-[103vw] rotate-[5deg]  bg-black/90 text-[60px] text-white/60 xl:text-[80px]">
+      <div className="section-marquee opacity-59 -ml-1 w-[103vw] rotate-[5deg] text-[60px] text-white/60 xl:text-[80px]">
         <Marquee autoFill={true} speed={100}>
           <h1 className="pl-5 ">WORKS </h1>
           <h1 className="pl-5 font-bold">WORKS </h1>
@@ -35,7 +49,7 @@ const Works = () => {
         </Marquee>
       </div>
 
-      <div className="-ml-5 w-[110vw] -rotate-[9deg] bg-black/90 py-3.5 text-[60px] text-white/60 xl:text-[80px]">
+      <div className="section-marquee -ml-5 w-[110vw] -rotate-[9deg] py-3.5 text-[60px] text-white/60 xl:text-[80px]">
         <Marquee
           autoFill={true}
           direction="right"
@@ -44,19 +58,25 @@ const Works = () => {
           className=""
         >
           {" "}
-          <FaReact />
-          <FaPhp />
-          <FaDatabase />
-          <FaPython />
-          <FaCss3Alt />
-          <FaUnity />
-          <FaJs />
-          <FaHtml5 />
-          <FaNode />
-          <TbBrandCSharp />
-          <SiGithub />
-          <SiTensorflow />
-          <SiTailwindcss />
+          <FaReact className="mx-1" />
+          <FaPhp className="mx-1" />
+          <FaDatabase className="mx-1" />
+          <FaPython className="mx-1" />
+          <FaCss3Alt className="mx-1" />
+          <FaUnity className="mx-1" />
+          <FaJs className="mx-1" />
+          <FaHtml5 className="mx-1" />
+          <FaNode className="mx-1" />
+          <TbBrandCSharp className="mx-1" />
+          <SiGithub className="mx-1" />
+          <SiTensorflow className="mx-1" />
+          <SiTailwindcss className="mx-1" />
+          <SiDocker className="mx-1" />
+          <SiAzuredevops className="mx-1" />
+          <SiAndroid className="mx-1" />
+          <SiApple className="mx-1" />
+          <SiExpo className="mx-1" />
+          <SiPlaywright className="mx-1" />
           {/* <FaUnity />
               <FaReact color="#00d8ff" />
               <FaPhp color="#787cb5" />
@@ -77,7 +97,74 @@ const Works = () => {
         {/* Project 1 */}
         <div
           id="project"
-          className="relative mt-[110px] w-full px-6 text-white/90 xl:mt-[200px] xl:px-24"
+          className="relative ml-auto mt-[90px] w-full px-6 text-right text-white/90 xl:mt-[50px] xl:px-24"
+        >
+          <motion.div
+            variants={fadeIn("left", 0.4)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            exit="hidden"
+            className="xl:leading-[12rem]"
+          >
+            <h1 className="text-[90px] font-bold md:text-[170px] xl:text-[250px]">
+              ANNO
+              <br />
+              TAX
+            </h1>
+          </motion.div>
+          <Tilt className="absolute right-[28%] top-[100px] ml-auto flex max-w-sm flex-col gap-4 md:right-[30%] md:top-[200px] min-[1440px]:right-[30%]">
+            <motion.div
+              variants={fadeIn("right", 0.3)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              exit="hidden"
+              className="aug-panel project-card flex flex-col gap-4 px-4 py-8"
+            >
+              <div className="project-tech-strip flex w-full justify-center gap-2 text-[50px]">
+                <SiNextdotjs />
+                <SiReact />
+                <SiExpo />
+                <SiSupabase />
+              </div>
+              <div className="rounded-xl bg-[url('/images/too-small.png')] bg-cover bg-center">
+                <img
+                  className="rounded-xl object-cover object-center"
+                  src={AnnotaxGif}
+                  loading="lazy"
+                  alt="Annotax preview"
+                />
+              </div>
+              <p className="px-2 text-left font-thin leading-normal">
+                A modern EPUB reader with community photo
+                annotations and text-to-speech built with React Native (Expo) for
+                mobile, Next.js for web, and Supabase backend workflows. To enhance the reading experience.
+              </p>
+              <div className="project-links flex justify-between text-[40px]">
+                <a
+                  href="https://github.com/biboyboy04/annotax-web"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <SiGithub />
+                </a>
+                <a
+                  href="https://annotax.site"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaArrowCircleRight />
+                </a>
+              </div>
+            </motion.div>
+          </Tilt>
+        </div>
+
+        {/* Project 2 */}
+        <div
+          id="project"
+          className="relative mt-[100px] w-full px-6 text-white/90 xl:mt-[360px] xl:px-24"
         >
           <motion.div
             variants={fadeIn("right", 0.4)}
@@ -101,9 +188,9 @@ const Works = () => {
               whileInView="show"
               viewport={{ once: true }}
               exit="hidden"
-              className="flex w-full flex-col gap-4 rounded-lg border border-gray-200 bg-black/90 px-4 py-8 shadow  "
+              className="aug-panel project-card flex w-full flex-col gap-4 px-4 py-8"
             >
-              <div className="flex w-full justify-center text-[50px]">
+              <div className="project-tech-strip flex w-full justify-center text-[50px]">
                 <FaReact />
                 <FaHtml5 />
                 <FaCss3Alt />
@@ -119,14 +206,14 @@ const Works = () => {
                   alt=""
                 />
               </div>
-              <p className="px-2 font-thin uppercase leading-normal">
+              <p className="px-2 font-thin leading-normal">
                 Experience an AI-powered e-book reader web app that analyzes the
                 text in the current chapter to identify the dominant emotion.
                 The application then recommends a emotionally appropriate
                 playlist using the Spotify API based on the detected emotion.
               </p>
 
-              <div className="flex justify-between text-[40px]">
+              <div className="project-links flex justify-between text-[40px]">
                 <a
                   href=" https://github.com/biboyboy04/Emo-chan"
                   target="_blank"
@@ -145,7 +232,7 @@ const Works = () => {
             </motion.div>
           </Tilt>
         </div>
-        {/* Project 2 */}
+        {/* Project 3 */}
         <div
           id="project"
           className="relative ml-auto mt-[170px] w-full px-6 text-right text-white/90 lg:mt-[250px]  xl:mt-[460px] xl:px-24"
@@ -175,9 +262,9 @@ const Works = () => {
               whileInView="show"
               viewport={{ once: true }}
               exit="hidden"
-              className="flex flex-col gap-4  rounded-lg border border-gray-200 bg-black/90  px-4 py-8 shadow "
+              className="aug-panel project-card flex flex-col gap-4 px-4 py-8"
             >
-              <div className="flex w-full justify-center text-[50px]">
+              <div className="project-tech-strip flex w-full justify-center text-[50px]">
                 <FaHtml5 />
                 <FaCss3Alt />
                 <FaJs />
@@ -193,14 +280,14 @@ const Works = () => {
                   alt=""
                 />
               </div>
-              <p className="px-2 text-left   font-thin uppercase leading-normal">
+              <p className="px-2 text-left font-thin leading-normal">
                 Explore a captivating 2D platformer mobile game featuring
                 dynamic combat, numerous challenging levels, and epic boss
                 encounters. Developed in Unity, the game is now available for
                 download on the landing page.
               </p>
 
-              <div className="flex justify-between text-[40px]">
+              <div className="project-links flex justify-between text-[40px]">
                 <a
                   href="https://github.com/biboyboy04/TowerOfOuroboros"
                   target="_blank"
@@ -219,7 +306,7 @@ const Works = () => {
             </motion.div>
           </Tilt>
         </div>
-        {/* Project 3 */}
+        {/* Project 4 */}
         <div
           id="project"
           className="relative mt-[100px] w-full px-6 text-white/90 md:-mt-[150px] lg:-mt-[150px] lg:px-[120px]  xl:mt-[120px]"
@@ -243,9 +330,9 @@ const Works = () => {
               whileInView="show"
               viewport={{ once: true }}
               exit="hidden"
-              className="flex flex-col gap-4 rounded-lg border border-gray-200 bg-black/90 px-4 py-8 shadow "
+              className="aug-panel project-card flex flex-col gap-4 px-4 py-8"
             >
-              <div className="flex w-full justify-center text-[50px]">
+              <div className="project-tech-strip flex w-full justify-center text-[50px]">
                 <FaHtml5 />
                 <FaCss3Alt />
                 <SiTailwindcss />
@@ -261,7 +348,7 @@ const Works = () => {
                   alt=""
                 />
               </div>
-              <p className="px-2   font-thin uppercase leading-normal">
+              <p className="px-2 font-thin leading-normal">
                 A web app featuring user and admin login functionalities. Users
                 can book services and manage their bookings, while admins have
                 control over users, services, and requests. The application is
@@ -286,7 +373,7 @@ const Works = () => {
             </motion.div>
           </Tilt>
         </div>
-        {/* Project 4 */}
+        {/* Project 5 */}
         <div
           id="project"
           className="relative ml-auto mt-[170px] w-full px-6 text-right text-white/90  xl:mt-[590px] xl:px-24"
@@ -312,9 +399,9 @@ const Works = () => {
               whileInView="show"
               viewport={{ once: true }}
               exit="hidden"
-              className="flex flex-col gap-4  rounded-lg border border-gray-200 bg-black/90  px-4 py-8 shadow "
+              className="aug-panel project-card flex flex-col gap-4 px-4 py-8"
             >
-              <div className="flex w-full justify-center text-[50px]">
+              <div className="project-tech-strip flex w-full justify-center text-[50px]">
                 <FaReact />
                 <SiTailwindcss />
                 <FaHtml5 />
@@ -331,13 +418,13 @@ const Works = () => {
                   alt=""
                 />
               </div>
-              <p className="px-2 text-left font-thin uppercase leading-normal">
+              <p className="px-2 text-left font-thin leading-normal">
                 A web app that streamlines the internship application process by
                 allowing users to track application statuses and generate
                 tailored endorsement letters effortlessly.
               </p>
 
-              <div className="flex justify-between text-[40px]">
+              <div className="project-links flex justify-between text-[40px]">
                 <a
                   href="https://github.com/biboyboy04/InternTrack"
                   target="_blank"
@@ -356,10 +443,10 @@ const Works = () => {
             </motion.div>
           </Tilt>
         </div>
-        {/* Project 5 */}
+        {/* Project 6 */}
         <div
           id="project"
-          className="relative mt-[100px] w-full px-6 text-white/90 lg:mt-[200px] lg:px-[60px] xl:mt-[490px]"
+          className="relative mt-[100px] w-full px-6 pb-[420px] text-white/90 md:pb-[460px] lg:mt-[200px] lg:px-[60px] lg:pb-[520px] xl:mt-[490px]"
         >
           <motion.div
             variants={fadeIn("right", 0.4)}
@@ -382,9 +469,9 @@ const Works = () => {
               whileInView="show"
               viewport={{ once: true }}
               exit="hidden"
-              className="flex flex-col gap-4 rounded-lg border border-gray-200 bg-black/90 px-4 py-8 shadow "
+              className="aug-panel project-card flex flex-col gap-4 px-4 py-8"
             >
-              <div className="flex w-full justify-center text-[50px]">
+              <div className="project-tech-strip flex w-full justify-center text-[50px]">
                 <FaReact />
                 <FaHtml5 />
                 <FaCss3Alt />
@@ -398,15 +485,11 @@ const Works = () => {
                   alt=""
                 />
               </div>
-              <p className="px-2   font-thin uppercase leading-normal">
+              <p className="px-2 font-thin leading-normal">
                 A monster hunter themed memory card game that has score and high
                 score saved in the local storage.
               </p>
-              <div
-                className="flex justify-between text-[40px]"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <div className="project-links flex justify-between text-[40px]">
                 <a
                   href="https://github.com/biboyboy04/memory-game"
                   target="_blank"
@@ -425,6 +508,7 @@ const Works = () => {
             </motion.div>
           </Tilt>
         </div>
+
       </div>
 
       {/* <div className="align-center mt-[200px] flex justify-center gap-24">

@@ -5,9 +5,10 @@ export const fadeIn = (direction, delay, durationHidden = 1.2, durationShow = 1.
       opacity: 0,
       x: direction === 'left' ? 80 : direction === 'right' ? -80 : 0,
       transition: {
-        type: 'spring',
-        duration: durationHidden,
-        delay: delay,
+        // Prevent leave/enter overlap when element quickly toggles in/out of viewport.
+        type: 'tween',
+        duration: Math.min(durationHidden, 0.2),
+        delay: 0,
         ease: [0.25, 0.6, 0.3, 0.8],
       },
     },
@@ -16,10 +17,10 @@ export const fadeIn = (direction, delay, durationHidden = 1.2, durationShow = 1.
       x: 0,
       opacity: 1,
       transition: {
-        type: 'spring',
+        type: 'tween',
         duration: durationShow,
         delay: delay,
-        ease: [0.25, 0.25, 0.25, 0.75],
+        ease: [0.22, 0.61, 0.36, 1],
       },
     },
   };

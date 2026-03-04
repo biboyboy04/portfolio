@@ -1,6 +1,6 @@
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from "tsparticles";
-import React, { useState, useEffect, useMemo, useCallback } from "react";
+import { useState, useEffect, useMemo, useCallback } from "react";
 const ParticlesContainer = () => {
   const [init, setInit] = useState(false);
   useEffect(() => {
@@ -11,9 +11,7 @@ const ParticlesContainer = () => {
     });
   }, []);
 
-  const particlesLoaded = useCallback(async (container) => {
-    console.log(container);
-  }, []);
+  const particlesLoaded = useCallback(async () => {}, []);
 
   const options = useMemo(
     () => ({
@@ -48,13 +46,13 @@ const ParticlesContainer = () => {
       },
       particles: {
         color: {
-          value: "rgba(0, 0, 0, 1)",
+          value: "rgba(255, 255, 255, 0.65)",
         },
         links: {
-          color: "rgba(0, 0, 0, 0.5)",
+          color: "rgba(255, 255, 255, 0.22)",
           distance: 150,
           enable: true,
-          opacity: 0.5,
+          opacity: 0.24,
           width: 1,
         },
         collisions: {
@@ -78,7 +76,7 @@ const ParticlesContainer = () => {
           value: 150,
         },
         opacity: {
-          value: 0.5,
+          value: 0.26,
         },
         shape: {
           type: "circle",

@@ -3,7 +3,10 @@ import Home from "./components/Home";
 import Nav from "./components/Nav";
 import Logo from "./components/Logo";
 import About from "./components/About";
+import Experience from "./components/Experience";
+import Skills from "./components/Skills";
 import Works from "./components/Works";
+import AnnotaxCaseStudy from "./components/AnnotaxCaseStudy";
 import Contact from "./components/Contact";
 import AnimatedCursor from "react-animated-cursor";
 import Transition from "./components/Transition";
@@ -11,10 +14,10 @@ import { SiGithub } from "react-icons/si";
 
 export default function App() {
   return (
-    <div className="w-[100vw] overflow-y-auto  overflow-x-hidden pb-[100px] lg:pb-0">
+    <div className="annotax-surface w-[100vw] overflow-x-hidden overflow-y-auto pb-[100px] lg:pb-0">
       <Transition />
       <AnimatedCursor
-        color="white"
+        color="255, 255, 255"
         innerSize={8}
         outerSize={35}
         innerScale={1}
@@ -61,10 +64,12 @@ export default function App() {
       <Nav />
       <Home />
       <About />
+      <Experience />
+      <Skills />
       <Works />
-
+      <AnnotaxCaseStudy />
       <Contact />
-      <footer className="flex items-center justify-center gap-2 text-[20px] font-thin text-white">
+      <footer className="footer-shell mt-2 flex items-center justify-center gap-2 pb-2 text-[20px] font-thin">
         <a
           href="https://github.com/biboyboy04"
           target="_blank"
@@ -73,7 +78,7 @@ export default function App() {
         >
           <SiGithub />
         </a>
-        Adrian Zapata 2024. All Rights Reserved.
+        Adrian Zapata 2026. All Rights Reserved.
       </footer>
     </div>
   );

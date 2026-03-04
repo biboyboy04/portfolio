@@ -1,8 +1,8 @@
 const Logo = () => {
   return (
     <a href="#home">
-      <div className="fixed left-0 top-0 z-10 w-[80px] transform transition-transform hover:scale-105">
-        <img src="/images/logo1.png" />
+      <div className="fixed left-2 top-2 z-10 w-[80px] transform transition-transform hover:scale-105">
+        <img src="/images/logo1.png" alt="Adrian Zapata logo" />
       </div>
     </a>
     // with bg image small

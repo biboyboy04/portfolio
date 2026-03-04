@@ -6,30 +6,30 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="page mt-[800px] py-10 text-center font-bold text-white xl:mt-[700px]"
+      className="w-full mt-[190px] py-10 text-center font-bold text-white xl:mt-[170px]"
     >
       <motion.h1
         variants={fadeIn("down", 0.4)}
         initial="hidden"
         whileInView="show"
         exit="hidden"
-        className="text-[88px] xl:text-[200px]"
+        className="contact-title text-[74px] xl:text-[150px]"
       >
-        CONTACT ME!?
+        CONTACT ME?
       </motion.h1>
-      <div className="mt-10 flex w-full flex-col gap-10 xl:mt-[150px] xl:flex-row">
+      <div className="mt-8 flex w-full flex-col gap-8 px-4 md:px-8 xl:mt-[70px] xl:flex-row xl:px-12">
         <motion.div
           variants={fadeIn("down", 0.45)}
           initial="hidden"
           whileInView="show"
           exit="hidden"
-          className="flex flex-1 flex-col items-center gap-10 "
+          className="aug-panel contact-card flex flex-1 flex-col items-center gap-6"
         >
-          <h1 className="text-[70px] text-white/70 lg:text-[100px]">
+          <h1 className="contact-card-icon text-[56px] lg:text-[78px]">
             <FaEnvelope />
           </h1>
-          <h1 className="text-[20px] font-thin text-white/70 lg:text-[50px]">
-            mail.adrianzapata@gmail.com
+          <h1 className="contact-card-text break-all text-[16px] font-thin sm:text-[20px] lg:text-[34px]">
+            adrianzapata.dev@gmail.com
           </h1>
         </motion.div>
         <motion.div
@@ -37,12 +37,12 @@ const Contact = () => {
           initial="hidden"
           whileInView="show"
           exit="hidden"
-          className="flex flex-1 flex-col items-center gap-10"
+          className="aug-panel contact-card flex flex-1 flex-col items-center gap-6"
         >
-          <h1 className="text-[70px] text-white/70 lg:text-[100px]">
+          <h1 className="contact-card-icon text-[56px] lg:text-[78px]">
             <FaPhone />
           </h1>
-          <h1 className="text-[20px] font-thin text-white/70 lg:text-[50px]">
+          <h1 className="contact-card-text text-[18px] font-thin sm:text-[22px] lg:text-[42px]">
             {"+(63)9096365092"}
           </h1>
         </motion.div>
