@@ -15,7 +15,12 @@ const transitionVariants = {
   },
 };
 
-const Transition = () => {
+// eslint-disable-next-line react/prop-types
+const Transition = ({ reducedMotion = false }) => {
+  if (reducedMotion) {
+    return null;
+  }
+
   return (
     <>
       <motion.div

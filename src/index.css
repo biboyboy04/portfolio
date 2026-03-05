@@ -311,6 +311,10 @@ a {
   letter-spacing: 0.06em;
 }
 
+.home-safe-top {
+  padding-top: calc(env(safe-area-inset-top, 0px) + 1.25rem);
+}
+
 .hero-role {
   font-family: "IBM Plex Mono", monospace;
   text-transform: uppercase;
@@ -762,7 +766,32 @@ a {
   }
 }
 
+@media (max-width: 900px) {
+  .annotax-surface::before,
+  .annotax-surface::after {
+    filter: blur(20px);
+    opacity: 0.12;
+  }
+
+  .aug-panel,
+  .nav-inner,
+  .annotax-sidesheet,
+  .annotax-view-card {
+    backdrop-filter: none;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.38);
+  }
+
+  .contact-card {
+    min-height: 180px;
+    padding: 1.35rem 0.95rem;
+  }
+}
+
 @media (max-width: 640px) {
+  .home-safe-top {
+    padding-top: calc(env(safe-area-inset-top, 0px) + 1.7rem);
+  }
+
   .scroll-cue-wrap {
     position: static;
     width: 100%;

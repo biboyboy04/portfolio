@@ -58,7 +58,7 @@ const Works = () => {
   }, []);
 
   return (
-    <div id="works" className="min-h-screen w-full pt-[200px] xl:pt-[130px]">
+    <div id="works" className="min-h-screen w-full pt-[100px] xl:pt-[130px]">
       <div className="section-marquee opacity-59 -ml-1 w-[103vw] rotate-[5deg] text-[60px] text-white/60 xl:text-[80px]">
         <Marquee autoFill={true} speed={100}>
           <h1 className="pl-5 ">WORKS </h1>

@@ -11,11 +11,18 @@ import Contact from "./components/Contact";
 import AnimatedCursor from "react-animated-cursor";
 import Transition from "./components/Transition";
 import { SiGithub } from "react-icons/si";
+import { useIsMobile } from "./hooks/useIsMobile";
 
 export default function App() {
+  const isMobile = useIsMobile();
   const [showEffects, setShowEffects] = useState(false);
 
   useEffect(() => {
+    if (isMobile) {
+      setShowEffects(false);
+      return undefined;
+    }
+
     const timer = window.setTimeout(() => {
       setShowEffects(true);
     }, 220);
@@ -23,11 +30,11 @@ export default function App() {
     return () => {
       window.clearTimeout(timer);
     };
-  }, []);
+  }, [isMobile]);
 
   return (
     <div className="annotax-surface w-[100vw] overflow-x-hidden overflow-y-auto pb-[100px] lg:pb-0">
-      <Transition />
+      <Transition reducedMotion={isMobile} />
       {showEffects ? (
         <>
           <AnimatedCursor
