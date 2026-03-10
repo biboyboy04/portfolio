@@ -8,10 +8,11 @@ const experienceData = [
     period: "July 2024 - Present",
     location: "Cavite, Philippines",
     highlights: [
-      "Built and maintained production web and mobile features using Angular and Ionic from Figma designs.",
-      "Implemented a web-based face recognition timekeeping flow for attendance workflows.",
-      "Resolved native mobile issues across camera, offline behavior, deep links, dependencies, and platform builds.",
-      "Automated Android APK build/release pipelines using Azure DevOps, Docker, and YAML.",
+      "Built and maintained production features for Angular and Ionic applications, translating Figma designs into responsive, pixel-accurate interfaces for web and mobile users.",
+      "Delivered a web-based face recognition timekeeping module that replaced manual attendance steps with faster digital verification workflows and expanded access to iOS and other non-Android users.",
+      "Resolved complex mobile issues caused by third-party libraries by identifying root causes and applying library-level fixes and patches through deep debugging.",
+      "Automated Android APK build and release workflows with Azure DevOps, Docker, and YAML pipelines, replacing a time-intensive manual process with standardized CI/CD jobs and removing reliance on a single release owner.",
+      "Collaborated with design, QA, and product teams in Agile sprints to address defects, ship enhancements, and improve production reliability.",
     ],
   },
 ];
