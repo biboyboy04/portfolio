@@ -331,7 +331,7 @@ a {
 .scroll-cue-wrap {
   position: absolute;
   inset-inline: 0;
-  bottom: 1.35rem;
+  bottom: max(0.35rem, env(safe-area-inset-bottom, 0px));
   display: flex;
   justify-content: center;
   pointer-events: none;
@@ -762,7 +762,7 @@ a {
   }
 
   .scroll-cue-wrap {
-    bottom: 6.2rem;
+    bottom: calc(env(safe-area-inset-bottom, 0px) + 5rem);
   }
 }
 
@@ -797,8 +797,8 @@ a {
     width: 100%;
     inset-inline: auto;
     bottom: auto;
-    margin-top: 1.15rem;
-    margin-bottom: 0.6rem;
+    margin-top: 1.85rem;
+    margin-bottom: 0.35rem;
     pointer-events: auto;
     justify-content: center;
     align-self: center;
