@@ -46,7 +46,7 @@ const skillGroups = [
     title: "Frameworks + Libraries",
     items: [
       { label: "React", icon: SiReact },
-      { label: "React Native (Expo)", icon: SiExpo },
+      { label: "React Native", icon: SiExpo },
       { label: "Angular", icon: SiAngular },
       { label: "Ionic", icon: SiIonic },
       { label: "Next.js", icon: SiNextdotjs },
